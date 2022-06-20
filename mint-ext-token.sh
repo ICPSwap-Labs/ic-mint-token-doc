@@ -142,11 +142,11 @@ function transfer() {
     echo "Please input the transfer amount. For example, the token with 8 decimal, you want to transfer 0.25 amount, then you need to input 25000000.";
     read -p "Please input your transfer amount: " amount
     symbol=$1
-    dfx canister --network=ic call token transfer '(record {to=variant {address="'$to_address'"}; token="'$symbol'"; notify=false; from=variant {address="'$account_id'"}; memo=vec {}; subaccount=null; nonce=null; amount='$amount'})'
+    dfx canister --network=ic call standard transfer '(record {to=variant {address="'$to_address'"}; token="'$symbol'"; notify=false; from=variant {address="'$account_id'"}; memo=vec {}; subaccount=null; nonce=null; amount='$amount'})'
     echo "transfer finished.";
   fi
   echo "You can execute follow command to transfer you mint token:";
-  echo "dfx canister --network=ic call token transfer '(record {to=variant {address=\"to_address\"}; token=\"token_symbol\"; notify=false; from=variant {address=\"your_account_address\"}; memo=vec {}; subaccount=null; nonce=null; amount=amount})'";
+  echo "dfx canister --network=ic call standard transfer '(record {to=variant {address=\"to_address\"}; token=\"token_symbol\"; notify=false; from=variant {address=\"your_account_address\"}; memo=vec {}; subaccount=null; nonce=null; amount=amount})'";
 }
 
 function mintToken() {
