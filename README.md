@@ -13,6 +13,17 @@
 sh mint-dip20-token.sh
 ```
 
+### Mint EXT Token
+
+1. Download the `mint-ext-token.sh`.
+
+2. Open a terminal shell on your local computer, if you don’t already have one open.
+
+3. Execute the following command, and follow the prompts to enter content.
+```shell
+sh mint-ext-token.sh
+```
+
 ## System Environment
 
 ### IC Environment
