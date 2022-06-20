@@ -1,6 +1,6 @@
 # Mint Token Doc
 
-## Start Mint Token
+## How To Mint Token
 
 ### Mint DIP20 Token
 
